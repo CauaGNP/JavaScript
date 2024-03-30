@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function perimetro (altura, largura){
+            let area= altura * largura;
+            let perimetro = 2 * (altura + largura);
+            let respostaArea = area;
+            let respostaPerimetro = perimetro;
+            return [respostaArea, respostaPerimetro]
+        }
+        let alturaArea = Number(prompt('Digite o valor de sua altura em metros:'));
+        let larguraArea = Number(prompt('Agora digite o valor de sua largura'));
+        let [respostaArea, respostaPerimetro] = perimetro(alturaArea, larguraArea);
+        
+        
+        document.write(`O valor de sua área é igual a: ${respostaArea} e o seu perímetro é igual a: ${respostaPerimetro}`);
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       let pesoPessoal = parseFloat(prompt('Digite o seu peso em Kg:'))
+        let alturaPessoal = parseFloat(prompt('Digite sua altura em m: '))
+        console.log(alturaPessoal, pesoPessoal)
+        function calcularIMC(altura, peso){
+            let imc = peso / (altura * altura);
+            return imc
+        }
+        let informações = calcularIMC(alturaPessoal, pesoPessoal)
+        alert(`Seu IMC é igual a ${informações}`);
+
+    </script>
+    
+</body>
+</html>
